@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.section1 {
+    min-height: 150vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(/img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    background-size: 100% 100%;
+    padding: 60px 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1440px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    align-items: start;
+}
+
+.hero-left {
+    padding: 40px 0;
+}
+
+.hero-title {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #9CFFE9;
+    margin-bottom: 40px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.section-block {
+    margin-bottom: 40px;
+}
+.section-block-kunstenaars-block{
+    padding-top: 35rem;
+}
+
+.section-title-2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #9CFFE9;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2A6767;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-text {
+    font-size: 1.4rem;
+    color: #2A6767;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.section-title-art-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2A6767;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.small-text {
+    font-size: 1.2rem;
+}
+
+.kunstenaars-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-image-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.circular-image-wrapper.large {
+    width: 340px;
+    height: 340px;
+    border: 2px solid black;
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    padding-top: 30rem;
+    padding-left: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.art-section {
+    text-align: center;
+}
+
+.art-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.art-info {
+    text-align: center;
+    max-width: 340px;
+}
+
+/* Responsieve design voor tablet/mobiel */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: 5rem;
+    }
+    
+    .hero-left {
+        order: 2;
+    }
+    
+    .hero-right {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section1 {
+        padding: 40px 16px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-text {
+        font-size: 1.2rem;
+    }
+    
+    .circular-image-wrapper {
+        width: 180px;
+        height: 180px;
+        border-width: 6px;
+    }
+    
+    .circular-image-wrapper.large {
+        width: 240px;
+        height: 240px;
+        border-width: 8px;
+    }
+}
+
+.test {
+    height: 200rem;
+}
+
+/* header */
+.custom-navbar {
+    background-color: #1cb5a3;
+    padding: 16px 32px;
+    position: relative;
+    z-index: 50;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: table;
+    width: 100%;
+}
+
+.navbar-logo {
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.logo-box {
+    font-size: 12px;
+    font-weight: 900;
+    border: 2px solid #ffffff;
+    padding: 2px 6px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding-left: 2px;
+    display: inline-block;
+}
+
+.navbar-links {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 16px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #ccfbf1;
+}
+
+.nav-item.active {
+    color: #ccfbf1;
+}
+
+.navbar-cart {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    width: 25%;
+}
+
+.cart-svg {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+
+.cart-svg:hover {
+    color: #ccfbf1;
+}
+
+/* Mobiele responsive weergave */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Verbergt de menu-items op mobiel zoals in Tailwind */
+    }
+    .navbar-logo {
+        width: 50%;
+    }
+    .navbar-cart {
+        width: 50%;
+    }
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #1cb5a3;
+    padding: 40px 24px;
+    position: relative;
+    z-index: 30;
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ccfbf1;
+    margin: 0 0 16px 0;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ccfbf1;
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.footer-copyright p {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgba(204, 251, 241, 0.7);
+    margin: 0;
+}
