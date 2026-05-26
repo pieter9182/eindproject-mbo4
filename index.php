@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
                 
                 <div class="section-block">
                     <h2 class="section-title">BESTE BEZOEKER</h2>
-                    <p class="section-text">Je bent op een unieke webshop beland. Wil je iets speciaals waar maar een aantal of een enkel product verkrijgbaar van is of bestaat. Een uniek kunstwerk wat jij alleen hebt of speciaal voor jouw is gemaakt.</p>
+                    <p class="section-text-boven">Je bent op een unieke webshop beland. Wil je iets speciaals waar maar een aantal of een enkel product verkrijgbaar van is of bestaat. Een uniek kunstwerk wat jij alleen hebt of speciaal voor jouw is gemaakt.</p>
                     <p class="section-text">Deze website bied kunstwerken en producten aan van niet bekende kunstenaars die LINDESIGN heel speciaal vind. En deze schilderijen of producten het liefst ook gemaakt of toepast in haar eigen ontworpen interieurs of tuinen.</p>
                     <p class="section-text">De Meeste kunstenaars hebben bijna allemaal een vaste baan van zijn druk met hun gezin en kunnen dit niet fulltime doen. Zij maken dit als hobby of als het een succes wordt. Kunnen ze hier misschien fulltime mee aan de slag</p>
                 </div>

@@ -1,10 +1,16 @@
-<nav class="custom-navbar">
+<nav class="custom-navbar<?php echo isset($navbar_class) ? ' ' . $navbar_class : ''; ?>">
     <div class="navbar-container">
         <div class="navbar-logo">
             <span class="logo-text">LINDESIGN SHOP</span>
         </div>
         
-        <div class="navbar-links">
+        <button class="hamburger-menu" id="hamburger-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="navbar-links" id="navbar-links">
             <a href="index.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">HOME</a>
             <a href="producten.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'producten.php') ? 'active' : ''; ?>">PRODUCTEN</a>
             <a href="over-ons.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'over-ons.php') ? 'active' : ''; ?>">OVER ONS</a>
@@ -18,3 +24,11 @@
         </div>
     </div>
 </nav>
+
+<script>
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+        var navbar = document.getElementById('navbar-links');
+        navbar.classList.toggle('active');
+        this.classList.toggle('active');
+    });
+</script>

@@ -10,4 +10,4 @@ services:
     environment:
       - APACHE_RUN_USER=www-data
       - APACHE_RUN_GROUP=www-data
-    container_name: lindesign-shop
+    container_name: lindesignshop
