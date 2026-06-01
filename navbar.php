@@ -11,10 +11,10 @@
         </button>
         
         <div class="navbar-links" id="navbar-links">
-            <a href="index.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">HOME</a>
-            <a href="producten.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'producten.php') ? 'active' : ''; ?>">PRODUCTEN</a>
-            <a href="over-ons.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'over-ons.php') ? 'active' : ''; ?>">OVER ONS</a>
-            <a href="contact.php" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'contact.php') ? 'active' : ''; ?>">CONTACT</a>
+            <a href="/" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">HOME</a>
+            <a href="/producten" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'producten.php') ? 'active' : ''; ?>">PRODUCTEN</a>
+            <a href="/over-ons" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'over-ons.php') ? 'active' : ''; ?>">OVER ONS</a>
+            <a href="/contact" class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'contact.php') ? 'active' : ''; ?>">CONTACT</a>
         </div>
 
         <div class="navbar-cart">
